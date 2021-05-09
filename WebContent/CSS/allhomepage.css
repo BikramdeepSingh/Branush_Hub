@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow:hidden;
+  background-color: rgb(196, 190, 190);
+}
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  height: 7vh;
+  z-index: 10;
+}
+.logo {
+  font-family: "Rock Salt", cursive;
+  color: white;
+  font-size: 10px;
+  margin: 10px;
+}
+
+.middle {
+  position: fixed;
+  top: 7%;
+  left: 0%;
+  width: 20%;
+  height: 110vh;
+  background-color: #333;
+}
+.menu {
+  width: 100%;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.item {
+  border-top: 1px solid #bfc0c0;
+  overflow: hidden;
+}
+.btn {
+  display: block;
+  padding: 12px 14px;
+  background: #252525;
+  color: white;
+  position: relative;
+}
+.btn i {
+  margin-right: 10px;
+}
+.smenu {
+  background: #333;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  max-height: 0;
+}
+.smenu a {
+  display: block;
+  padding: 8px 13px;
+  color: white;
+  font-size: 20px;
+  margin: 4px 0;
+  position: relative;
+}
+.smenu a:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #3498db;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+.smenu a:hover:before {
+  opacity: 1;
+}
+.item:target .smenu {
+  max-height: 10em;
+}
+.item a {
+  font-size: 15px;
+}
+.main-content {
+  width: 80%;
+  margin-left: 20%;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(196, 190, 190);
+}
+.Details,
+.Edit-profile,
+.edit-student,
+.ban-student,
+.view-student,
+.add-teacher,
+.view-teacher,
+.view-course,
+.add-course,
+.edit-course,
+.streams,
+.courses,
+.notes,
+.add-org,
+.edit-org,
+.theme,
+.language,
+.remove,
+.edit,
+.upload-course,
+.upload-notes,
+.add,
+.change-look,
+.add-something,
+.time-on,
+.exp {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(196, 190, 190);
+}
+.profile h1,
+.Details h1,
+.Edit-profile h1,
+.student h1,
+.edit-student h1,
+.ban-student h1,
+.view-student h1,
+.teacher h1,
+.add-teacher h1,
+.view-teacher h1,
+.course h1,
+.view-course h1,
+.add-course h1,
+.edit-course h1,
+.college h1,
+.streams h1,
+.courses h1,
+.notes h1,
+.org h1,
+.add-org h1,
+.upload-course h1,
+.upload-notes h1,
+.edit-org h1,
+.settings h1,
+.theme h1,
+.language h1,
+.change h1,
+.remove h1,
+.edit h1,
+.add h1,
+.more h1,
+.change-look h1,
+.add-something h1,
+.time-on h1,
+.exp h1 {
+  text-align: center;
+  padding-top: 55px;
+  width: 100%;
+  height: 7vh;
+}
+.mediaquery {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  nav {
+    display: none;
+  }
+  .middle {
+    display: none;
+  }
+  .main-content {
+    display: none;
+  }
+  .mediaquery {
+    display: block;
+    text-align: center;
+  }
+  body {
+    background-color: blanchedalmond;
+  }
+}
+.details-section {
+  margin-top: 12vh;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  text-align: center;
+  pointer-events: fill;
+}
+.details-section .Admin-details {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 70%;
+  height: 80vh;
+  justify-content: space-evenly;
+  pointer-events: all;
+}
+.details-section .admin-photo {
+  width: 30%;
+  height: 55vh;
+}
+.photo-of-admin {
+  height: 200px;
+  width: 150px;
+  border-radius: 50%;
+  background-image: url(http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/128/Places-user-identity-icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.Admin-details a {
+  color: black;
+  padding: 5px;
+  background-color: rgb(158, 158, 158);
+  width: 20%;
+  margin: auto;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="submit"],
+input[type="password"] {
+  width: 40%;
+  margin: 2% auto;
+  padding: 5px;
+}
+.edit-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70vh;
+  justify-content: space-evenly;
+  margin-top: 12vh;
+  align-items: center;
+}
+.Edit-profile a {
+  color: black;
+  padding: 5px;
+  background-color: rgb(158, 158, 158);
+}
+.view-student .stu-table {
+  margin-top: 10vh;
+}
+.view-student .stu-table table {
+  margin: auto;
+  width: 90%;
+  text-align: center;
+}
+table,
+th,
+td {
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.ban-unban {
+  display: flex;
+}
+.ban-table {
+  margin-top: 10vh;
+}
+.ban-student table {
+  margin: auto;
+  width: 90%;
+}
+.unban {
+  margin-top: 2vh;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+}
+.unban-table {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  justify-content: space-evenly;
+}
+.unban-table a {
+  color: black;
+  background-color: rgb(158, 158, 158);
+  width: 10%;
+  margin: auto;
+}
+.teacher-table {
+  margin-top: 10vh;
+}
+.teacher-table table {
+  width: 90%;
+  margin: auto;
+}
+.add-teacher-table {
+  margin-top: 10vh;
+  width: 100%;
+  height: 50vh;
+}
+.add-teacher-table form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 80vh;
+  margin: auto;
+  justify-content: space-evenly;
+}
+input[type="submit"] {
+  background-color: rgb(150, 147, 147);
+  border: none;
+  width: 10%;
+  cursor: pointer;
+}
+.courses {
+  width: 100%;
+  height: 78vh;
+  margin-top: 8vh;
+}
+.line1-courses {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+.outline {
+  width: 19%;
+  height: 30vh;
+  border: solid black;
+  border-radius: 6px;
+}
+.Course {
+  width: 100%;
+  height: 29.5vh;
+}
+.desc {
+  width: 100%;
+  height: 15vh;
+  text-align: center;
+}
+.desc h2 {
+  width: 100%;
+  height: 5vh;
+}
+.options-course {
+  display: flex;
+  width: 100%;
+  height: 12vh;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.options-course a {
+  color: rgba(71, 71, 71, 0.747);
+}
+.options-course a:hover {
+  color: black;
+}
+.phyton {
+  width: 100%;
+  height: 15vh;
+  background: url(https://img.icons8.com/nolan/64/python.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.java {
+  width: 100%;
+  height: 15vh;
+  background: url(https://img.icons8.com/color/64/000000/java-coffee-cup-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.html {
+  width: 100%;
+  height: 15vh;
+  background: url(https://img.icons8.com/dusk/64/000000/html-5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.css {
+  width: 100%;
+  height: 15vh;
+  background: url(https://img.icons8.com/color/64/000000/css3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.javascript {
+  width: 100%;
+  height: 15vh;
+  background: url(https://img.icons8.com/dusk/64/000000/javascript-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.departments {
+  width: 100%;
+  height: 78vh;
+
+  margin-top: 10vh;
+}
+.alldepart {
+  width: 95%;
+  height: 78vh;
+  margin: auto;
+}
+.CSEdepart,
+.ITdepart,
+.MECdepart {
+  margin: 10px;
+  width: 100%;
+  height: 20vh;
+  border: 1px solid black;
+}
+.CSEdepart a,
+.ITdepart a,
+.MECdepart a {
+  color: rgba(53, 53, 53, 0.849);
+}
+.CSEdepart a:hover,
+.ITdepart a:hover,
+.MECdepart a:hover {
+  color: black;
+}
+table {
+  border: 0;
+}
+.upload-notes {
+  margin-top:15vh;
+  text-align: center;
+}
+.input-field {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.submit{
+	padding:5px;
+	cursor:pointer;
+	
+}

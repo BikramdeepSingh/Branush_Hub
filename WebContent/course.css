@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Skranji&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* fonts */
+/* font-family: "Rock Salt", cursive; */
+/* font-family: 'Skranji', cursive; */
+/* font-family: "Poppins", sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #dbd8d8;
+}
+nav {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000000;
+}
+.logo h1 {
+  color: white;
+  font-family: "Rock Salt", cursive;
+  font-size: 19px;
+}
+.logo h1 span {
+  font-family: "Skranji", cursive;
+  margin-left: 5px;
+  letter-spacing: 1.5px;
+}
+.nav-links {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-links a {
+  color: rgba(158, 157, 157, 0.959);
+  font-family: "Skranji", cursive;
+  transition: color 0.2s ease;
+}
+.nav-links a:hover {
+  color: white;
+}
+.focus a {
+  color: white;
+}
+.down-nav {
+  width: 100%;
+  position: relative;
+  height: 6vh;
+  align-items: center;
+  background-color: rgba(22, 22, 22, 0.822);
+}
+.down-links {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+}
+.down-links a {
+  color: rgba(192, 192, 192, 0.842);
+  padding: 10px;
+  border-radius: 5px;
+  transition: color 0.5s ease;
+  transition: background-color 1s ease;
+}
+.down-links a:hover {
+  background-color: rgba(22, 22, 22, 0.89);
+  color: white;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+}
+.main-header {
+  display: flex;
+}
+.main-header h1 {
+  width: 100%;
+  height: 6vh;
+  text-align: center;
+}
+.line1 {
+  margin-top: 50px;
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  justify-content: space-around;
+}
+.border {
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.course {
+  width: 100%;
+  height: 35vh;
+}
+.Python {
+  width: 100%;
+  height: 20vh;
+  background: url(https://www.sololearn.com/Icons/Courses/1073.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.Java {
+  width: 100%;
+  height: 20vh;
+  background: url(https://developer.sas.com/guides/java/_jcr_content/par/styledcontainer_1d31/par/image.img.png/1573809080788.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.HTML {
+  width: 100%;
+  height: 20vh;
+  background: url(https://cdn.mos.cms.futurecdn.net/hFm4iWXhbw4c4rdcMH8tUD-320-80.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.JS {
+  width: 100%;
+  height: 20vh;
+  background: url(https://miro.medium.com/max/785/1*H-25KB7EbSHjv70HXrdl6w.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.SQL {
+  width: 100%;
+  height: 20vh;
+  background: url(https://mpng.subpng.com/20180403/lhe/kisspng-microsoft-azure-sql-database-microsoft-sql-server-database-5ac3dfa11c1874.3743286715227862091151.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.CSS {
+  width: 100%;
+  height: 20vh;
+  background: url(https://cdn.iconscout.com/icon/free/png-256/css-37-226088.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.Web {
+  width: 100%;
+  height: 20vh;
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZx8cpBP9nIBrHzb4gYcgi5I6zSuA3Zn6Aw4n5nlOMN_lmEM_G&usqp=CAU);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.PHP {
+  width: 100%;
+  height: 20vh;
+  background: url(https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/256_Php_logo-512.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.desc {
+  width: 100%;
+  height: 14.8vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: black;
+}
+.desc h3 {
+  color: white;
+}
+.desc .options {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.cart {
+  background-color: rgb(72, 72, 214);
+  padding: 5px 5px;
+  align-self: center;
+  color: rgb(209, 209, 209);
+  transition: color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+.cart:hover {
+  background-color: blue;
+  color: white;
+}
+.coming {
+  width: 100%;
+  height: 80vh;
+}
+.coming-header {
+  text-align: center;
+}
+.coming-header h2 {
+  font-size: 35px;
+}
+.coming-soon {
+  cursor: not-allowed;
+}
+footer {
+  margin-top: 10vh;
+  width: 100%;
+  height: 25vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer h3 {
+  color: white;
+}
+.mediaquery {
+  text-align: center;
+  display: none;
+}
+.mediaquery h2 {
+  color: white;
+}
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: black;
+  }
+  nav {
+    display: none;
+  }
+  .main {
+    display: none;
+  }
+  .coming {
+    display: none;
+  }
+  .mediaquery {
+    display: inline;
+  }
+}
