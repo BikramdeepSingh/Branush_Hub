@@ -205,24 +205,3 @@ input:checked + .slider:before {
 .btn-space a:hover {
   margin-bottom: 5px;
 }
-
-.mediaquery{
-	display: none;
-}
-
-@media screen and (max-width: 1200px){
-	body{
-		background-color: blanchedalmond;
-	}
-	nav{
-		display: none;
-	}
-	.card-section{
-		display: none;
-	}
-	.mediaquery{
-		display: inline;
-		text-align: center;
-		color : black;
-	}
-}

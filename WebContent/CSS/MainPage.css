@@ -1,8 +1,6 @@
-@charset "ISO-8859-1";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 :root {
-	
   --text-color: black;
   --bg: #f4f4f4;
   --primary-color: rgba(192, 192, 192, 0.664);
@@ -64,7 +62,7 @@ nav {
 
 .logo {
   color: var(--text-color);
-  font-size: 10px;
+  font-size: 100px;
 }
 
 .logo h1 {
@@ -211,7 +209,6 @@ input:checked + .slider:before {
 .streams,
 .courses,
 .notes,
-.query,
 .add-org,
 .edit-org,
 .theme,
@@ -239,8 +236,6 @@ input:checked + .slider:before {
 .teacher h1,
 .add-teacher h1,
 .view-teacher h1,
-.query h1,
-.user-query h1,
 .course h1,
 .view-course h1,
 .add-course h1,
@@ -317,6 +312,7 @@ input:checked + .slider:before {
   height: 150px;
   width: 150px;
   border-radius: 50%;
+  background-image: url(http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/128/Places-user-identity-icon.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -360,14 +356,6 @@ input[type="password"] {
   margin-top: 10vh;
 }
 .view-student .stu-table table {
-  margin: auto;
-  width: 90%;
-  text-align: center;
-}
-.user-query .qu-table {
-  margin-top: 10vh;
-}
-.user-query .qu-table table {
   margin: auto;
   width: 90%;
   text-align: center;
@@ -552,27 +540,4 @@ table {
   margin-top: 15px;
   display: flex;
   flex-direction: column;
-}
-
-.fa-user-graduate,
-.teacher-icon{
-	font-size: 75px;
-}
-
-.admin-icon{
-	font-size: 100px;
-}
-.submit{
-	width: 10%;
-	padding: 8px;
-	border: 1px solid var(--text-color);
-	border-radius: 5px;
-	background: var(--bg);
-	cursor: pointer;
-	margin: auto;
-}
-
-
-.query{
-	overflow-y:scroll;
 }

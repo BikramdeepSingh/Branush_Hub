@@ -254,24 +254,3 @@ input:checked + .slider:before {
 .btn:focus {
   outline: none;
 }
-
-.mediaquery {
-  display: none;
-}
-@media screen and (max-width: 1200px) {
-  nav {
-    display: none;
-  }
- 
-  .courses{
-  	display: none;
-  }
-    
-  .mediaquery {
-    display: block;
-    text-align: center;
-  }
-  body {
-    background-color: blanchedalmond;
-  }
-}

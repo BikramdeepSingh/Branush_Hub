@@ -134,7 +134,7 @@ input:checked + .slider:before {
   right: 30%;
 }
 
-.main {
+.main {	
   width: 100%;
   height: 50vh;
   /* background: url(https://images.unsplash.com/photo-1527168027773-0cc890c4f42e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQi; */
@@ -337,30 +337,3 @@ input:checked + .slider:before {
   background-color: var(--nav-cl);
 }
 
-.mediaquery {
-  display: none;
-}
-@media screen and (max-width: 1200px) {
-  nav {
-    display: none;
-  }
-  .ilu{
-  	display: none;
-  }
-  .select-section{
-  	display: none;
-  }
-  .stream-page{
-  	display: none;
-  }
-  .main-page{
-  	display: none;
-  } 
-  .mediaquery {
-    display: block;
-    text-align: center;
-  }
-  body {
-    background-color: blanchedalmond;
-  }
-}

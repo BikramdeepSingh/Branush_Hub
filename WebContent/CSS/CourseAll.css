@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Skranji&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* fonts */
+/* font-family: "Rock Salt", cursive; */
+/* font-family: 'Skranji', cursive; */
+/* font-family: "Poppins", sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+}
+.python {
+  width: 100%;
+  height: 35vh;
+  background: url(https://www.dyclassroom.com/image/topic/python/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  position: relative;
+  background-color: white;
+}
+.java {
+  width: 100%;
+  height: 35vh;
+  background: url(https://www.itpccares.com/wp-content/uploads/2019/01/Java-.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  position: relative;
+  background-color: #de0000;
+}
+.JS {
+  width: 100%;
+  height: 35vh;
+  background: url(https://ilanolkies.com/img/js_beginners_class_1/portrait.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  position: relative;
+  background-color: #fadf1c;
+}
+.css {
+  width: 100%;
+  height: 35vh;
+  background: url(https://miro.medium.com/max/3450/1*H0IBb9kvGI3eIuL1sGmWug.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  position: relative;
+  background-color: #046f93;
+}
+.sql {
+  width: 100%;
+  height: 35vh;
+  background: url(https://www.tutorialrepublic.com/lib/images/sql-illustration.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  position: relative;
+  background-color: #17b3e3;
+}
+.web {
+  width: 100%;
+  height: 35vh;
+  background: url(https://img-a.udemycdn.com/course/750x422/140238_dd80_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  position: relative;
+  background-color: #65baf3;
+}
+.php {
+  width: 100%;
+  height: 40vh;
+  background: url(https://www.mobiwebtech.com/wp-content/uploads/2016/12/php.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  position: relative;
+  background-color: #616f9d;
+}
+.html {
+  width: 100%;
+  height: 40vh;
+  background: url(https://incomejoin.com/wp-content/uploads/2018/09/html-incomejoin.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  position: relative;
+  background-color: #20667f;
+}
+.about {
+  position: fixed;
+  width: 25%;
+  border-radius: 10px;
+  height: 70vh;
+  background-color: rgb(48, 48, 48);
+  top: 20%;
+  left: 70%;
+}
+.edit-it {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.header-edit h2 {
+  color: white;
+  letter-spacing: 1px;
+}
+.header-desc p {
+  color: white;
+  width: 80%;
+  height: 20vh;
+  margin: auto;
+}
+.header-buttons {
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cart {
+  background-color: rgb(247, 54, 54);
+  width: 80%;
+  margin: auto;
+  padding: 7px;
+  border-radius: 5px;
+  color: rgb(230, 228, 228);
+  transition: color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+.cart:hover {
+  background-color: red;
+  color: white;
+}
+.buy {
+  background-color: rgb(58, 58, 247);
+  width: 80%;
+  margin: auto;
+  padding: 7px;
+  border-radius: 5px;
+  color: rgb(196, 195, 195);
+  transition: color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+.buy:hover {
+  background-color: blue;
+  color: white;
+}
+.about-couse {
+  width: 60%;
+  height: 80vh;
+}
+.course-details {
+  width: 60%;
+  height: 80vh;
+}
+.header-course {
+  width: 100%;
+  height: 10vh;
+  margin-top: 10px;
+  text-align: center;
+}
+.header-course h1 {
+  color: white;
+}
+.points {
+  width: 70%;
+  height: 40vh;
+  margin-left: 5%;
+}
+.points li {
+  color: white;
+}
+.last {
+  width: 60%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
