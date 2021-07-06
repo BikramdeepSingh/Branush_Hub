@@ -1,0 +1,87 @@
+1. CREATE DATABASE `branushhub` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+    USE 'branushhub';
+
+2. CREATE TABLE `adminlogin` (
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phno` varchar(10) NOT NULL,
+  `date` varchar(12) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `aadhaar` varchar(12) NOT NULL,
+  PRIMARY KEY (`email`,`aadhaar`),
+  UNIQUE KEY `aadhaar_UNIQUE` (`aadhaar`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+3. CREATE TABLE `banstudent` (
+  `email` varchar(255) NOT NULL,
+  `reason` varchar(255) NOT NULL,
+  PRIMARY KEY (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+4. CREATE TABLE `contact` (
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phno` varchar(10) NOT NULL,
+  `message` varchar(255) NOT NULL,
+  PRIMARY KEY (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+5. CREATE TABLE `emailandaadhar` (
+  `email` varchar(30) NOT NULL,
+  `Aadhaar` varchar(12) NOT NULL,
+  PRIMARY KEY (`email`,`Aadhaar`),
+  UNIQUE KEY `email_UNIQUE` (`email`),
+  UNIQUE KEY `Aadhaar_UNIQUE` (`Aadhaar`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+6. CREATE TABLE `studentlogin` (
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phno` varchar(10) NOT NULL,
+  `date` varchar(12) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `favouritesport` varchar(45) NOT NULL,
+  `aadhaar` varchar(12) NOT NULL,
+  PRIMARY KEY (`aadhaar`,`email`),
+  UNIQUE KEY `email_UNIQUE` (`email`),
+  UNIQUE KEY `aadhaar_UNIQUE` (`aadhaar`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+7. CREATE TABLE `teacherlogin` (
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phno` varchar(10) NOT NULL,
+  `date` varchar(12) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `favouriteSport` varchar(45) NOT NULL,
+  `aadhaar` varchar(12) NOT NULL,
+  PRIMARY KEY (`email`,`aadhaar`),
+  UNIQUE KEY `email_UNIQUE` (`email`),
+  UNIQUE KEY `aadhaar_UNIQUE` (`aadhaar`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+8. CREATE TABLE `unbanstudent` (
+  `email` varchar(255) NOT NULL,
+  PRIMARY KEY (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+9. CREATE TABLE `uploadnotes` (
+  `noteId` int(11) NOT NULL AUTO_INCREMENT,
+  `notes` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `link` varchar(255) NOT NULL,
+  PRIMARY KEY (`noteId`),
+  UNIQUE KEY `noteId_UNIQUE` (`noteId`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+10. CREATE TABLE `viewcourse` (
+  `courseId` int(12) NOT NULL AUTO_INCREMENT,
+  `email` varchar(45) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  PRIMARY KEY (`courseId`),
+  UNIQUE KEY `courseId_UNIQUE` (`courseId`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
