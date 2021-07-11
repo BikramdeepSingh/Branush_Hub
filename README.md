@@ -22,7 +22,7 @@ Branush Hub is a web application developed using servlets and jsp along with the
 
 ## Installation
 
-Run Branush Hub using Eclipse IDE for Eclipse
+Run Branush Hub using Eclipse EE IDE
 
 - Download the source folder (i.e. Branush_Hub).
 - Place the downloaded folder in the eclipseEE workspace.
